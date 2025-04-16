@@ -1,0 +1,91 @@
+@import url("assets/css/nav.css");
+@import url("assets/css/home.css");
+@import url("assets/css/about.css");
+@import url("assets/css/projects.css");
+@import url("assets/css/contact.css");
+/* Global Styles */
+:root {
+    --primary-color: #6a795e;
+    --secondary-color: #333333;
+    --text-color: #333333;
+    --light-color: #ffffff;
+    --dark-color: #222222;
+    --accent-color: #ff006e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero, .about-content, .contact-container {
+        flex-direction: column;
+    }
+    
+    .hero-image, .about-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
