@@ -3,6 +3,7 @@
 @import url("assets/css/about.css");
 @import url("assets/css/projects.css");
 @import url("assets/css/contact.css");
+@import url("assets/css/opensource.css");
 /* Global Styles */
 :root {
     --primary-color: #6a795e;
@@ -24,6 +25,10 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: #f9f9f9;
+}
+
+svg {
+    stroke: var(--primary-color);
 }
 
 .container {

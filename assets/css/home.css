@@ -79,5 +79,14 @@ h1 {
 
 .social-icon:hover {
     background-color: var(--primary-color);
-    color: white;
+    /* Remove the color change for the icon background on hover */
+}
+
+.social-icon svg {
+    stroke: var(--primary-color); /* Initial green stroke */
+    transition: stroke 0.3s; /* Add transition for smooth effect */
+}
+
+.social-icon:hover svg {
+    stroke: white; /* White stroke on hover */
 }
