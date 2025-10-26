@@ -43,11 +43,18 @@ nav {
     font-weight: 500;
     font-size: 1rem;;
     transition: color 0.3s, transform 0.3s ease-in-out; /* Add font-size transition */
+    border-radius: 5px;
+    padding: 8px 12px;
 }
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--primary-color);
     transform: scale(1.25);
+}
+
+.nav-links a:hover{
+    background-color: var(--secondary-color);
+    color: var(--light-color)
 }
 
 /* Scrolled state styles */
